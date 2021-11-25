@@ -73,7 +73,7 @@ header {
         z-index: 99;
         top: 0;
         padding: 0 2.25rem;
-        display: flex!important;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -117,7 +117,7 @@ header {
         z-index: 99;
         top: 0;
         padding: 0 2.25rem;
-        display: none!important;
+        display: none;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -296,7 +296,7 @@ main {
     animation: aparecer 1.3s;
 }
 
-@media (max-width:7800px) {
+@media (max-width:780px) {
     header {
         .menu-bar-pc {
             display: none!important;
