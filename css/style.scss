@@ -3,13 +3,38 @@ $color-secundario: #7DBC26;
 $color-blanco: #efefef;
 $color-negro: #121212;
 
-
+@font-face {
+    font-family: rajdhani;
+    src: url(../font/Rajdhani-Regular.ttf);
+  }
+  @font-face {
+    font-family: rajdhani-bold;
+    src: url(../font/Rajdhani-Bold.ttf);
+  }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: rajdhani;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: rajdhani-bold;
+}
+p{
+    font-family: rajdhani!important;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.img-services{
+    width: 80px;
+}
+.bg-none{
+    background: none;
+}
 .color-p {
     color: $color-secundario !important;
 }
@@ -63,7 +88,6 @@ img {
     border: 2px solid $color-secundario;
     color: $color-secundario;
 }
-
 
 header {
     .menu-bar-pc {
@@ -189,6 +213,35 @@ main {
         background-repeat: no-repeat;
         background-position: center;
     }
+    #banner_about {
+        width: 100%;
+        height:500px;
+        background-image: url(../img/infraestructura-it.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+    #bg_skills{
+        width: 100%;
+        height: 100%;
+        
+        background-image: url(../img/page-title.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        
+        &::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: $color-principal;
+            opacity: .8;
+            position: absolute;
+
+        }
+    }
 
     .banner-contact {
         background: #7DBC26;
@@ -230,9 +283,23 @@ main {
         background-repeat: no-repeat;
     }
 
+    // ABOUT
 
+    #percentage{
+        
+        .container-percentage{
+            border: 1px solid $color-secundario;
+            padding: 1px 5px;
+            border-radius: 10px;
+        }
+            .percentage_bg{
+                background: $color-secundario;
+                height: 10px;
+                // width: 90%;
+            }
+        
 
-
+    }
 }
 
 .pic {
