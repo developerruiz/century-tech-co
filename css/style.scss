@@ -1,16 +1,22 @@
-$color-principal: #091125;
-$color-secundario: steelblue;
+$color-principal: #212529;
+$color-secundario: #0095D9;
+$color-subtitle: #0095D9;
 $color-blanco: #efefef;
 $color-negro: #121212;
+$color-icon: #0095D9;
+
+
 
 @font-face {
     font-family: rajdhani;
     src: url(../font/Rajdhani-Regular.ttf);
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: rajdhani-bold;
     src: url(../font/Rajdhani-Bold.ttf);
-  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,22 +25,45 @@ $color-negro: #121212;
     font-family: rajdhani;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: rajdhani-bold;
 }
-p{
-    font-family: rajdhani!important;
+
+.color-subtitle {
+    color: $color-subtitle !important;
 }
-img{
+
+.color-icon {
+    color: $color-icon !important;
+}
+.whats-hover:hover{
+    text-decoration: underline !important;
+    transition: all .3s ease-in!important;
+    -webkit-transition: all .3s ease-in!important;
+    -o-transition: all .3s ease-in!important;
+}
+p {
+    font-family: rajdhani !important;
+}
+
+img {
     width: 100%;
     height: auto;
 }
-.img-services{
+
+.img-services {
     width: 80px;
 }
-.bg-none{
+
+.bg-none {
     background: none;
 }
+
 .color-p {
     color: $color-secundario !important;
 }
@@ -43,12 +72,17 @@ img{
     color: $color-blanco;
 }
 
+.color-g {
+    $color-principal: #212529!important;
+
+}
+
 .bg-principal {
-    background: $color-principal;
+    background: $color-principal !important;
 }
 
 .bg-second {
-    background: $color-secundario;
+    background: #f5f6fa;
 }
 
 .card-shadow {
@@ -79,7 +113,7 @@ img {
 
 .btn-info {
     background: $color-secundario !important;
-    border: 2px solid #59851c;
+    border: 2px solid $color-secundario;
     color: $color-blanco;
 }
 
@@ -156,7 +190,8 @@ header {
     .burger-menu {
         cursor: pointer;
         font-size: 2.1875rem;
-        i{
+
+        i {
             color: $color-blanco;
         }
 
@@ -213,26 +248,28 @@ main {
         background-repeat: no-repeat;
         background-position: center;
     }
+
     #banner_about {
         width: 100%;
-        height:500px;
+        height: 500px;
         background-image: url(../img/infraestructura-it.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
 
     }
-    #bg_skills{
+
+    #bg_skills {
         width: 100%;
         height: 100%;
-        
+
         background-image: url(../img/page-title.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
-        
-        &::before{
+
+        &::before {
             content: "";
             width: 100%;
             height: 100%;
@@ -255,19 +292,21 @@ main {
         margin-top: -150px;
     }
 
-    .contadores_principal{
+    .contadores_principal {
         // background: #ebebeb;
         display: flex;
         justify-content: center;
-    
-        .contador{
+
+        .contador {
             text-align: center;
-            .contador_cantidad{
+
+            .contador_cantidad {
                 font-weight: 600;
                 color: $color-principal;
                 font-size: 26px;
             }
-            h4{
+
+            h4 {
                 color: $color-negro;
             }
         }
@@ -285,19 +324,20 @@ main {
 
     // ABOUT
 
-    #percentage{
-        
-        .container-percentage{
+    #percentage {
+
+        .container-percentage {
             border: 1px solid $color-secundario;
             padding: 1px 5px;
             border-radius: 10px;
         }
-            .percentage_bg{
-                background: $color-secundario;
-                height: 10px;
-                // width: 90%;
-            }
-        
+
+        .percentage_bg {
+            background: $color-secundario;
+            height: 10px;
+            // width: 90%;
+        }
+
 
     }
 }
@@ -366,17 +406,17 @@ main {
 @media (max-width:780px) {
     header {
         .menu-bar-pc {
-            display: none!important;
+            display: none !important;
         }
 
         .menu-bar-movil {
-            display: flex!important;
+            display: flex !important;
         }
     }
 }
 
 @media (max-width: 800px) {
-   .container-galery{
+    .container-galery {
         display: flex;
         flex-wrap: wrap;
     }
