@@ -13,7 +13,7 @@ addEventListener('DOMContentLoaded', () => {
 
                 if (valor_actual < cantidad_maxima) {
                     contador.innerText = Math.ceil(valor_actual + incremento)
-                    setTimeout(actualizar_contador, 5)
+                    setTimeout(actualizar_contador, 10)
                 }else{
                     contador.innerText = cantidad_maxima
                 }
@@ -32,7 +32,7 @@ addEventListener('DOMContentLoaded', () => {
             if(elemento.isIntersecting){
                 elemento.target.classList.add ('animar')
                 elemento.target.classList.remove('ocultar')
-                setTimeout(animarContadores,300)
+                setTimeout(animarContadores,500)
             }
         });
     }

@@ -1,5 +1,5 @@
 $color-principal: #091125;
-$color-secundario: #7DBC26;
+$color-secundario: steelblue;
 $color-blanco: #efefef;
 $color-negro: #121212;
 
@@ -244,7 +244,7 @@ main {
     }
 
     .banner-contact {
-        background: #7DBC26;
+        background: $color-secundario;
     }
 
     #section-cards {
