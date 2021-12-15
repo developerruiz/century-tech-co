@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/Desarrollo-Web-Dibdata.jpg" />
+    <title>Century Tech Co</title>
+    <meta property="og:url" content=" http://www.centurytech.com/" />
+    <meta property="og:description" content="más de 20 años de experiencia somos CENTURY TECH CO.
+        referente nacional e internacional en materia de seguridad tecnológica, contando con una
+        plantilla altamente cualificada que posee diversas certificaciones en el ámbito de los
+        productos y servicios de seguridad de la información y una amplia experiencia en
+        seguridad de la información." />
+
+    <meta name="description" content="más de 20 años de experiencia somos CENTURY TECH CO.
+        referente nacional e internacional en materia de seguridad tecnológica, contando con una
+        plantilla altamente cualificada que posee diversas certificaciones en el ámbito de los
+        productos y servicios de seguridad de la información y una amplia experiencia en
+        seguridad de la información." />
+
+    <meta name="keywords" content="manual,html,elementos,atributos,ejemplos" />
+
+    <meta property="og:site_name" content="Century Tech Co" />
+    <meta property="fb:admins" content="ID de Facebook " />
+    <meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
+    <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" />
+    <meta property="og:type" content="website" />
+    <meta name="author" content="Ivan Ruiz odriguez || Front-end Developer" />
+    <meta name="revised" content="09/12/2021" />
+    <!-- <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> -->
+
+    <!-- Refresh
+    Especifica cada cuanto tiempo tiene que recargar la página el navegador web. El tiempo es en segundos.
+    <meta http-equiv="refresh" content="5" /> -->
+
+    <!-- Google Authorship and Publisher Markup -->
+    <!-- <link rel="author" href=" <a href=" blank">https://plus.google.com/[Google+_Profile]/posts"/</a>>
+    <link rel="publisher" href=” <a href="blank">https://plus.google.com/[Google+_Page_Profile]"/</a>> -->
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Titulo">
+    <meta itemprop="description" content="Descripcion">
+    <meta itemprop="image" content="http://www.example.com/image.jpg">
+    <!-- Nos sirve para guardar una cookie. Los datos guardados son clave/valor -->
+    <meta http-equiv="cookie" content="clave=valor; expires=Saturday, 25-Mar-16 23:59:59 GMT;" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- FONTAWENSOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ICONS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-bar-pc">
+            <a href="index.html">
+                <img src="img/century-logo.png" alt="Century Tech Co." style="width: 120px;">
+            </a>
+
+            <div class="d-flex">
+
+                <nav class="menu-principal me-4">
+                    <ul class="list-menu m-0 flex-row d-flex justify-content-evenly">
+                        <li class="item-menu">
+                            <a href="index.html" class="text-decoration-none color-white ">Inicio</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="" class="text-decoration-none color-white ">Nosotros</a>
+                            <div class="sub-menu position-absolute">
+                                <ul class="list-submenu m-0 p-0">
+                                    <li class="item-submenu"><a href="nosotros.html">Century Tech</a></li>
+                                    <li class="item-submenu"><a href="nuestro-equipo.html">Nuestro equipo</a></li>
+                                    <!-- <li class="item-submenu">Lorem</li>
+                                    <li class="item-submenu">Lorem</li> -->
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="item-menu">
+                            <a href="index.html" class="text-decoration-none color-white ">Infraestructura</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="index.html" class="text-decoration-none color-white ">Desarrollo</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="top-redes d-flex align-items-center">
+                    <a href="https://www.facebook.com/centurytechco/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/century.tech.co/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="menu-bar-movil">
+            <a href="logo">
+                <img src="img/century-logo.png" alt="Naturēa" style="width: 100px;">
+            </a>
+
+            <div class="burger-menu" id="burger_menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+
+            <div class="slideMenu" id="slideMenu">
+                <div class="top-redes">
+                    <a href="https://www.facebook.com/centurytechco/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/century.tech.co/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+
+                <nav class="menu-principal">
+                    <a href="index.html" class="volver-arriba"> Inicio</a>
+                    <a href="nosotros.html" class="scroll-suave">Nosotros</a>
+                    <a href="#" class="scroll-suave">Infraestructura</a>
+                    <a href="#" class="scroll-suave">Desarrollo</a>
+
+                </nav>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+
+        <!-- <section id="portada">
+        </section> -->
+        <section class="banner-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center my-5">
+                        <h1>Nuestro equipo</h1>
+                    </div>
+                    <div class="col-lg-12 d-flex flex-wrap align-items-center justify-content-around mb-5">
+
+                        <div class="card col-lg-3 col-md-3 col-12 pt-3 data-bs-toggle=" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <div class="card-img text-center">
+                                <img src="img/team-1.png" alt="" style="width: 50%; margin: 0 auto;">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Ivan Ruiz</h4>
+                                    <h6 class="fst-italic text-muted">Front-end Developer</h6>
+                                </div>
+                                <div class="card-body text-center m-0 p-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere blanditiis veritatis
+                                    nesciunt et quas quisquam amet ipsum maxime asperiores molestiae?
+                                </div>
+                            </div>
+                            <div class="card-footer text-center">
+                                <ul class="list-group flex-row justify-content-evenly">
+                                    <a href="https://www.facebook.com/centurytechco/">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/century.tech.co/">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured">
+                                        <i class="far fa-envelope"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Developers</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="col-lg-12 d-flex">
+                                            <div class="col-lg-4 p-5">
+                                                <img src="img/team-1.png" alt="" style="width:100%;">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <h2>Ivan Ruiz</h2>
+                                                <h6 class="text-muted fw-bold fst-italic">Front-en Developer</h6>
+                                                <p style="font-size: 14px;">Front-end Developer Jr con 2 años 5 meses de
+                                                    experiencia en
+                                                    desarrollo de páginas y aplicaciones web responsivas con uso de
+                                                    HTML, CSS y JavaScript,uso de pre-prosesador SASS, Framework
+                                                    Bootstrap,Fundamentos en diseño UX/UI y control de versiones con
+                                                    uso de git y alojamiento en GitHub.
+                                                    conocimientos y practica en nuevas
+                                                    tecnologias de desarrollo como librería React Js, programacion en
+                                                    React Navite para el desarrollo de aplicaciones moviles. Consumo de
+                                                    API´s.
+                                                </p>
+
+                                                <p>Mantenimiento y creación de páginas web en Wordpress, css
+                                                    adicionales, instalación de plugis, bases de datos, backups,
+                                                    Ecommerce.
+                                                </p>
+
+                                                <p>
+                                                    deomstracion de proyectos en
+                                                    demo con servidor Netlify con conexion al repositorio de Github.
+                                                </p>
+
+                                                <p>conocimientos adicionales en SQL Server Management Studio, Uso de
+                                                    lenguaje de programación PHP 7.7 para el envio y uso de datos en
+                                                    MySQL.
+                                                </p>
+                                                <p>
+                                                    Web Master Jr conocimiento en implementación de tags, plug
+                                                    ins, UX / UI, SEO /SEM, lectura de métricas y datos, para el analisi
+                                                    de
+                                                    estrategias para mejorar el performance y navegación e
+                                                    interacción del usuario final
+                                                </p>
+                                                <h4 class="fst-i fs-5 color-p my-5">Desarrollamos el cambio, Somos tecnologia, somos Century Tech</h4>
+
+                                                <!-- PORCENTAJES -->
+                                                <!-- <div class="col-lg-12">
+
+                                                    <div>
+                                                        <h6> HTML</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-100"
+                                                                role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                                aria-valuemax="100">100%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h6> CSS</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-100"
+                                                                role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                                aria-valuemax="100">100%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h6> JavaScript</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-75"
+                                                                role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                                aria-valuemax="100">75%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h6> React Js</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-50"
+                                                                role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                                aria-valuemax="75">75%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h6> Bootstrap</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-75"
+                                                                role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                                aria-valuemax="75">75%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h6> Git</h6>   
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-50"
+                                                                role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                                aria-valuemax="75">75%</div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+
+                                                <!-- ICONOS -->
+                                                <div class="col-lg-12 my-4">
+                                                    <!-- <h3 class="fw-bold">Habilidades </h3> -->
+                                                    <ul
+                                                        class="m-0 p-0 d-flex justify-content-around align-items-center">
+                                                        <i class="fs-1 color-icon fab fa-html5 animate"></i>
+                                                        <i class="fs-1 color-icon fab fa-css3-alt animate"></i>
+                                                        <i class="fs-1 color-icon fab fa-js-square animate"></i>
+                                                        <i class="fs-1 color-icon fab fa-bootstrap animate"></i>
+                                                        <i class="fs-1 color-icon fab fa-react animate"></i>
+                                                        <i class="fs-1 color-icon fab fa-github animate"></i>
+                                                        <i class="fs-1 color-icon fab fa-git-alt animate"></i>
+                                                        <i class="fs-1 color-icon fas fa-database animate"></i>
+                                                    </ul>
+                                                </div>
+
+                                                <!-- PORCENTAJES -->
+                                                <div class="col-lg-12">
+
+                                                    <div>
+                                                        <h6> HTML</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-100"
+                                                                role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                                aria-valuemax="100">100%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h6> CSS</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-100"
+                                                                role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                                aria-valuemax="100">100%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h6> JavaScript</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-50"
+                                                                role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                                aria-valuemax="100">50%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h6> React Js</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-50"
+                                                                role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                                aria-valuemax="75">75%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h6> Bootstrap</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-75"
+                                                                role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                                aria-valuemax="75">75%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h6> Git</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-50"
+                                                                role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                                aria-valuemax="75">50%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h6> PHP</h6>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar bg-info text-dark w-25"
+                                                                role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                                aria-valuemax="75">25%</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card col-lg-3 col-md-3 pt-3 data-bs-toggle=" data-bs-toggle="modal"
+                            data-bs-target="#team-2">
+                            <div class="card-img text-center">
+                                <img src="img/team-1.png" alt="" style="width: 50%; margin: 0 auto;">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Leonardo Brena</h4>
+                                    <h6 class="fst-italic text-muted">CEO</h6>
+                                </div>
+                                <div class="card-body text-center m-0 p-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere blanditiis veritatis
+                                    nesciunt et quas quisquam amet ipsum maxime asperiores molestiae?
+                                </div>
+                            </div>
+                            <div class="card-footer text-center">
+                                <ul class="list-group flex-row justify-content-evenly">
+                                    <a href="https://www.facebook.com/centurytechco/">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/century.tech.co/">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured">
+                                        <i class="far fa-envelope"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="team-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">CEO</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="col-lg-12 d-flex">
+                                            <div class="col-lg-4 p-5">
+                                                <img src="img/team-1.png" alt="" style="width:100%;">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <p> Mantengo un enfoque al desarrollo de sistemas / proyectos,
+                                                    soluciones de
+                                                    red, desarrollo, sistemas distribuidos y sus derivados. He sido
+                                                    responsable de proporcionar soluciones de TI (Tecnologías de la
+                                                    Información) en diferentes empresas, tanto en el ámbito
+                                                    gubernamental
+                                                    como también en la iniciativa privada.</p>
+                                                <p> Cuento con una amplia experiencia
+                                                    en diferentes ámbitos de negocio, como Banco, Hotelería, Retail,
+                                                    Logística, Supervisión a Entidades Financieras, Tiendas
+                                                    Departamentales
+                                                    y Desarrollo Agroindustrial entre otros. Mi participación en
+                                                    distintos
+                                                    proyectos ha posicionado a la compañía en el canal de comunicación
+                                                    más
+                                                    cercano con los Partners en tecnología más grandes de México.
+                                                    Consolido
+                                                    experiencia técnica sólida en TI y una visión estratégica para la
+                                                    innovación y el cambio. Habiéndome desempeñado en distintas
+                                                    funciones
+                                                    como dirección de sistemas, desarrollo de software, sistemas de
+                                                    información, administración de proyectos y de definición e
+                                                    implantación
+                                                    de procesos de negocio.</p>
+                                                <p> De los profesionales con los que colaboro valoro la sinceridad, el
+                                                    compromiso y la iniciativa. Son muchos los factores que influyen en
+                                                    el
+                                                    éxito de un proyecto, mi herramienta más útil la obtengo a través de
+                                                    5
+                                                    conceptos:
+                                                </p>
+                                                <ul>
+                                                    <li>Visión global.</li>
+                                                    <li>Atención</li>
+                                                    <li>Metodología.</li>
+                                                    <li>Planificación.</li>
+                                                    <li>Inclinación por la calidad</li>
+                                                </ul>
+                                                <p> Con visión por lograr un cambio. - LB</p>
+                                                
+                                                <h4 class="fst-i fs-5 color-p my-5">Desarrollamos el cambio, Somos tecnologia, somos Century Tech</h4>
+
+
+                                                <!-- ICONOS -->
+                                                <div class="col-lg-12">
+                                                    <!-- <h3 class="fw-bold">Habilidades </h3> -->
+                                                    <ul class="m-0 p-0 d-flex align-items-center">
+                                                        <i class="me-4 fs-1 color-icon fab fa-html5 animate"></i>
+                                                        <i class="me-4 fs-1 color-icon fab fa-css3-alt animate"></i>
+                                                        <i class="me-4 fs-1 color-icon fab fa-js-square animate"></i>
+                                                        <i class="me-4 fs-1 color-icon fab fa-bootstrap animate"></i>
+                                                        <i class="me-4 fs-1 color-icon fab fa-react animate"></i>
+                                                        <!-- <i class="me-4 fs-1 color-icon fab fa-github animate"></i> -->
+                                                        <i class="me-4 fs-1 color-icon fab fa-git-alt animate"></i>
+                                                        <i class="me-4 fs-1 color-icon fas fa-database animate"></i>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-lg-3 col-md-3 pt-3 data-bs-toggle=" data-bs-toggle="modal"
+                            data-bs-target="#team-3">
+                            <div class="card-img text-center">
+                                <img src="img/team-1.png" alt="" style="width: 50%; margin: 0 auto;">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Leonardo Brena</h4>
+                                    <h6 class="fst-italic text-muted">Lorem, ipsum dolor.</h6>
+                                </div>
+                                <div class="card-body text-center m-0 p-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere blanditiis veritatis
+                                    nesciunt et quas quisquam amet ipsum maxime asperiores molestiae?
+                                </div>
+                            </div>
+                            <div class="card-footer text-center">
+                                <ul class="list-group flex-row justify-content-evenly">
+                                    <a href="https://www.facebook.com/centurytechco/">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/century.tech.co/">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured">
+                                        <i class="far fa-envelope"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="team-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Backend</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="col-lg-12 d-flex">
+                                            <div class="col-lg-4 p-5">
+                                                <img src="img/team-1.png" alt="" style="width:100%;">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <h2>Lorem, ipsum.</h2>
+                                                <h6 class="text-muted fw-bold fst-italic">Lorem, ipsum dolor.</h6>
+                                                <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Nam, saepe. Accusamus qui nobis voluptate
+                                                    blanditiis modi possimus nisi dolore fugit quia suscipit delectus
+                                                    laudantium sed, culpa corporis quidem sint? Totam voluptates
+                                                    suscipit quasi voluptas, obcaecati vero hic temporibus eveniet
+                                                    repudiandae esse minima ipsa nesciunt commodi perferendis iusto?
+                                                    Velit, adipisci repellendus?
+                                                </p>
+                                                <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Nam, saepe. Accusamus qui nobis voluptate
+                                                    blanditiis modi possimus nisi dolore fugit quia suscipit delectus
+                                                    laudantium sed, culpa corporis quidem sint? Totam voluptates
+                                                    suscipit quasi voluptas, obcaecati vero hic temporibus eveniet
+                                                    repudiandae esse minima ipsa nesciunt commodi perferendis iusto?
+                                                    Velit, adipisci repellendus?
+                                                </p>
+
+                                                <!-- PORCENTAJES -->
+                                                <!-- <div class="col-lg-12">
+
+                                               <div>
+                                                   <h6> HTML</h6>
+                                                   <div class="progress mb-3">
+                                                       <div class="progress-bar bg-info text-dark w-100"
+                                                           role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                           aria-valuemax="100">100%</div>
+                                                   </div>
+                                               </div>
+                                               <div>
+                                                   <h6> CSS</h6>
+                                                   <div class="progress mb-3">
+                                                       <div class="progress-bar bg-info text-dark w-100"
+                                                           role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                           aria-valuemax="100">100%</div>
+                                                   </div>
+                                               </div>
+                                               <div>
+                                                   <h6> JavaScript</h6>
+                                                   <div class="progress mb-3">
+                                                       <div class="progress-bar bg-info text-dark w-75"
+                                                           role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                           aria-valuemax="100">75%</div>
+                                                   </div>
+                                               </div>
+                                               <div>
+                                                   <h6> React Js</h6>
+                                                   <div class="progress mb-3">
+                                                       <div class="progress-bar bg-info text-dark w-50"
+                                                           role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                           aria-valuemax="75">75%</div>
+                                                   </div>
+                                               </div>
+                                               <div>
+                                                   <h6> Bootstrap</h6>
+                                                   <div class="progress mb-3">
+                                                       <div class="progress-bar bg-info text-dark w-75"
+                                                           role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                           aria-valuemax="75">75%</div>
+                                                   </div>
+                                               </div>
+                                               <div>
+                                                   <h6> Git</h6>   
+                                                   <div class="progress mb-3">
+                                                       <div class="progress-bar bg-info text-dark w-50"
+                                                           role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                           aria-valuemax="75">75%</div>
+                                                   </div>
+                                               </div>
+                                           </div> -->
+
+                                                <!-- ICONOS -->
+                                                <div class="col-lg-12">
+                                                    <h3 class="fw-bold">Habilidades </h3>
+                                                    <ul class="m-0 p-0 d-flex align-items-center">
+                                                        <i class="me-4 fs-1 color-icon fab fa-html5 animate"></i>
+                                                        <i class="me-4 fs-1 color-icon fab fa-css3-alt animate"></i>
+                                                        <i class="me-4 fs-1 color-icon fab fa-js-square animate"></i>
+                                                        <!-- <i class="fs-1 color-icon fab fa-bootstrap animate"></i>
+                                                        <i class="fs-1 color-icon fab fa-react animate"></i>
+                                                        <i class="fs-1 color-icon fab fa-github animate"></i>
+                                                        <i class="fs-1 color-icon fab fa-git-alt animate"></i>
+                                                        <i class="fs-1 color-icon fas fa-database animate"></i> -->
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-principal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex flex-wrap">
+                    <div class="col-lg-3 p-2">
+                        <div class="logo-footer">
+                            <img src="img/century-logo.png" alt="" style="width: 40%;">
+                        </div>
+                        <div>
+                            <p class="color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                                voluptatibus!</p>
+                        </div>
+                        <div class="d-flex footer-redes">
+                            <!-- <i class="fab fa-whatsapp-square fs-2 me-2 color-white"></i> -->
+                            <a href="https://www.facebook.com/centurytechco/" class="fs-2 me-3 color-white">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/century.tech.co/" class="fs-2 me-3 color-white">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCiY1ARRj4Qu0b108KYsHnhw/featured"
+                                class="fs-2 me-3 color-white">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <ul>
+                            <li class="color-white">Lorem, ipsum dolor.</li>
+                            <li class="color-white">Lorem, ipsum dolor.</li>
+                            <li class="color-white">Lorem, ipsum dolor.</li>
+                            <li class="color-white">Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <div class="d-flex">
+                            <div class="m-2">
+                                <img src="img/Desarrollo-Web-Dibdata.jpg" alt="" style="width: 100px; height: 80px;">
+                            </div>
+                            <div class="">
+                                <p class="color-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Voluptatum.</p>
+                                <article> 22 noviembre 2021</article>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="m-2">
+                                <img src="img/Desarrollo-Web-Dibdata.jpg" alt="" style="width: 100px; height: 80px;">
+                            </div>
+                            <div class="">
+                                <p class="color-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Voluptatum.</p>
+                                <article> 22 noviembre 2021</article>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <h4>Lorem, ipsum dolor.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/runners.js"></script>
+</body>
+
+</html>

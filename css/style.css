@@ -36,9 +36,9 @@ h6 {
 
 .whats-hover:hover {
   text-decoration: underline !important;
-  transition: all 0.3s ease-in !important;
-  -webkit-transition: all 0.3s ease-in !important;
-  -o-transition: all 0.3s ease-in !important;
+  transition: all .3s ease-in !important;
+  -webkit-transition: all .3s ease-in !important;
+  -o-transition: all .3s ease-in !important;
 }
 
 p {
@@ -100,8 +100,8 @@ img {
 }
 
 img {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .btn-info {
@@ -119,7 +119,7 @@ img {
 header .menu-bar-pc {
   background: #212529;
   width: 100%;
-  position: absolute;
+  height: 80px;
   z-index: 99;
   top: 0;
   padding: 0 2.25rem;
@@ -136,17 +136,75 @@ header .menu-bar-pc {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 5.875rem;
+}
+
+header .menu-bar-pc .logo-nav {
+  width: 100px;
 }
 
 header .menu-bar-pc .menu-principal {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header .menu-bar-pc .menu-principal a {
-  padding: 0 0.5625rem;
-  text-decoration: none;
-  color: #efefef;
+header .menu-bar-pc .menu-principal .list-menu {
+  height: 80px;
+}
+
+header .menu-bar-pc .menu-principal .list-menu .item-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menu-bar-pc .menu-principal .list-menu .item-menu a {
+  height: 80px !important;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu-bar-pc .menu-principal .list-menu .item-menu .sub-menu {
+  background: #fff;
+  width: 150px;
+  margin-top: 80px;
+  display: none;
+  height: 0;
+  -webkit-transition: .3s ease-in !important;
+  transition: .3s ease-in !important;
+  z-index: 99999;
+}
+
+header .menu-bar-pc .menu-principal .list-menu .item-menu .sub-menu .list-submenu {
+  list-style: none;
+}
+
+header .menu-bar-pc .menu-principal .list-menu .item-menu .sub-menu .list-submenu .item-submenu a {
+  padding: 10px 20px;
+}
+
+header .menu-bar-pc .menu-principal .list-menu .item-menu .sub-menu .list-submenu .item-submenu a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+header .menu-bar-pc .menu-principal .list-menu .item-menu:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+header .menu-bar-pc .menu-principal .list-menu .item-menu:hover .sub-menu {
+  display: block;
+  height: auto;
+  -webkit-transition: .3s ease-in !important;
+  transition: .3s ease-in !important;
 }
 
 header .menu-bar-pc .top-redes a {
@@ -224,6 +282,15 @@ header .slideMenu .menu-principal a {
   color: #872FA8;
 }
 
+main #banner-desarrollo {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/img-banner-desarrollo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -300px;
+}
+
 main #portada {
   width: 100%;
   height: 600px;
@@ -233,13 +300,13 @@ main #portada {
   background-position: center;
 }
 
-main #banner_about {
+main #portada-desarrollo {
   width: 100%;
-  height: 500px;
-  background-image: url(../img/infraestructura-it.jpg);
-  background-size: cover;
+  height: 600px;
+  background-image: url(../img/Recurso2.png);
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
 }
 
 main #bg_skills {
@@ -262,7 +329,7 @@ main #bg_skills::before {
 }
 
 main .banner-contact {
-  background: #0095D9;
+  background: #f5f6fa;
 }
 
 main #section-cards {
@@ -315,6 +382,10 @@ main #percentage .container-percentage {
 main #percentage .percentage_bg {
   background: #0095D9;
   height: 10px;
+}
+
+footer .logo-footer {
+  width: 100px;
 }
 
 .pic {
@@ -419,5 +490,10 @@ main #percentage .percentage_bg {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+animate:hover {
+  -webkit-transform: rotate(90deg) !important;
+          transform: rotate(90deg) !important;
 }
 /*# sourceMappingURL=style.css.map */

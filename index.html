@@ -52,30 +52,71 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
     <!-- FONTAWENSOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ICONS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
 
 <body>
     <header>
         <div class="menu-bar-pc">
-            <a href="index.html">
-                <img src="img/century-logo.png" alt="Century Tech Co." style="width: 120px;">
+            <a href="index.html" class="logo-nav">
+                <img src="img/century-logo.png" alt="Century Tech Co.">
             </a>
+
 
             <div class="d-flex">
 
                 <nav class="menu-principal me-4">
-                    <a href="index.html" class="volver-arriba"> Inicio</a>
-                    <a href="nosotros.html" class="scroll-suave">Nosotros</a>
-                    <a href="#about-us" class="scroll-suave">Infraestructura</a>
-                    <a href="#regalos" class="scroll-suave">Desarrollo</a>
+                    <ul class="list-menu m-0 flex-row d-flex justify-content-evenly">
+                        <li class="item-menu">
+                            <a href="index.html" class="text-decoration-none color-white ">Inicio</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="" class="text-decoration-none color-white ">Nosotros</a>
+                            <div class="sub-menu position-absolute">
+                                <ul class="list-submenu m-0 p-0">
+                                    <li class="item-submenu"><a href="nosotros.html">Century Tech</a></li>
+                                    <li class="item-submenu"><a href="nuestro-equipo.html">Nuestro equipo</a></li>
+                                    <!-- <li class="item-submenu">Lorem</li>
+                                    <li class="item-submenu">Lorem</li> -->
+                                </ul>
+                            </div>
+                        </li>
 
+                        <li class="item-menu">
+                            <a href="index.html" class="text-decoration-none color-white ">Infraestructura</a>
+                            <div class="sub-menu position-absolute">
+                                <ul class="list-submenu m-0 p-0">
+                                    <li class="item-submenu"><a href="nosotros.html">Century Tech</a></li>
+                                    <li class="item-submenu"><a href="nuestro-equipo.html">Nuestro equipo</a></li>
+                                    <!-- <li class="item-submenu">Lorem</li>
+                                    <li class="item-submenu">Lorem</li> -->
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item-menu">
+                            <a href="desarrollo.html" class="text-decoration-none color-white ">Desarrollo</a>
+                            <div class="sub-menu position-absolute">
+                                <ul class="list-submenu m-0 p-0">
+                                    <li class="item-submenu"><a href="nosotros.html">Century Tech</a></li>
+                                    <li class="item-submenu"><a href="nuestro-equipo.html">Nuestro equipo</a></li>
+                                    <!-- <li class="item-submenu">Lorem</li>
+                                    <li class="item-submenu">Lorem</li> -->
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item-menu">
+                            <a href="index.html" class="text-decoration-none color-white ">Contacto</a>
+                        </li>
+                    </ul>
                 </nav>
 
-                <div class="top-redes">
+                <div class="top-redes d-flex align-items-center">
                     <a href="https://www.facebook.com/centurytechco/" target="_blank">
                         <i class="fab fa-facebook-f"></i>
                     </a>
@@ -86,6 +127,7 @@
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>
+
             </div>
         </div>
 
@@ -318,85 +360,90 @@
 
                             <div class="card col-lg-3 border-none text-center m-4">
                                 <div class="card-img">
-                                    <i class="fas fa-headphones-alt color-icon fs-1"></i>
+                                    <i class="bi bi-headset fs-1 color-p"></i>
+
                                 </div>
                                 <div class="card-body">
                                     <div class="card-title">
                                         <h3 class="fs-4">HELP DESK</h3>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consecte adipiscing elit, sed diam nonummy nibh
-                                        euismod tincidunt
+                                        Contamos con un equipo centralizado donde atendemos a empleados o clientes en
+                                        masa, utilizando un producto de software para organizar las conversaciones
                                     </p>
                                 </div>
                             </div>
                             <div class="card col-lg-3 border-none text-center m-4 card-shadow">
                                 <div class="card-img">
-                                    <i class="fas fa-headphones-alt color-icon fs-1"></i>
+                                    <i class="bi bi-headset fs-1 color-p"></i>
+
                                 </div>
                                 <div class="card-body">
                                     <div class="card-title">
                                         <h3 class="fs-4">Soporte de primer nivel</h3>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consecte adipiscing elit, sed diam nonummy nibh
-                                        euismod tincidunt
+                                        Nuestro soporte de primer nivel da asistencia remota, le proporciona de una
+                                        forma más eficaz y sencilla un apoyo inmediato a sus clientes.
                                     </p>
                                 </div>
                             </div>
                             <div class="card col-lg-3 border-none text-center m-4">
                                 <div class="card-img">
-                                    <i class="fas fa-headphones-alt color-icon fs-1"></i>
+                                    <i class="bi bi-headset fs-1 color-p"></i>
+
                                 </div>
                                 <div class="card-body">
                                     <div class="card-title">
                                         <h3 class="fs-4">Servicio de contact center</h3>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consecte adipiscing elit, sed diam nonummy nibh
-                                        euismod tincidunt
+                                        Ofrecemos un servicio de Contact Center con la tecnología más avanzada para
+                                        fortalecer la relación con los clientes sea cual sea su tipo de empresa.
                                     </p>
                                 </div>
                             </div>
                             <div class="card col-lg-3 border-none text-center m-4">
                                 <div class="card-img">
-                                    <i class="fas fa-headphones-alt color-icon fs-1"></i>
+                                    <i class="bi bi-headset fs-1 color-p"></i>
+
                                 </div>
                                 <div class="card-body">
                                     <div class="card-title">
                                         <h3 class="fs-4">Proyectos contact center</h3>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consecte adipiscing elit, sed diam nonummy nibh
-                                        euismod tincidunt
+                                        Servicio de llamadas entrantes correspondientes al rebote de centros de atención
+                                        primaria.
                                     </p>
                                 </div>
                             </div>
                             <div class="card col-lg-3 border-none text-center m-4">
                                 <div class="card-img">
-                                    <i class="fas fa-headphones-alt color-icon fs-1"></i>
+                                    <i class="bi bi-headset fs-1 color-p"></i>
                                 </div>
                                 <div class="card-body">
                                     <div class="card-title">
                                         <h3 class="fs-4">Help Desk instalación y asistencia </h3>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consecte adipiscing elit, sed diam nonummy nibh
-                                        euismod tincidunt
+                                        Century Tech ofrece dos soluciones Help Desk con la garantía de ser un soporte
+                                        cualificado al servicio de sus clientes, soporte 365, Help Desk Integral.
                                     </p>
                                 </div>
                             </div>
                             <div class="card col-lg-3 border-none text-center m-4">
                                 <div class="card-img">
-                                    <i class="fas fa-headphones-alt color-icon fs-1"></i>
+                                    <i class="bi bi-headset fs-1 color-p"></i>
+
                                 </div>
                                 <div class="card-body">
                                     <div class="card-title">
                                         <h3 class="fs-4">Call Center vs Contact center</h3>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consecte adipiscing elit, sed diam nonummy nibh
-                                        euismod tincidunt
+                                        Conozca las diferencias entre Call Center y Contact Center y ofrezca un servicio
+                                        a sus clientes con soporte 365 de recepción y emisión de información.
                                     </p>
                                 </div>
                             </div>
@@ -448,14 +495,16 @@
                                                 </div>
                                                 <div class="col-lg-6 p-3">
                                                     <h3 class="fw-bold">
-                                                        Lorem ipsum dolor sit.
+                                                        Centro de distribución P&G
                                                     </h3>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-                                                    atque, exercitationem inventore sapiente quis sint sunt quae ullam
-                                                    placeat facilis unde. Nisi architecto similique libero, quo quaerat
-                                                    veritatis corporis aspernatur quam, tenetur, nobis hic obcaecati ea
-                                                    consequatur sapiente quae ducimus mollitia quis. Quis nostrum ipsa
-                                                    eum? Iure illum architecto minus?
+                                                 <p>   Century Tech durante diferentes procesos ha atravesado retos para
+                                                    lograr la satisfacción de cada proyecto, con la premisa de siempre
+                                                    tener como prioridad altos niveles de servicio, P&G confía altamente
+                                                    en nuestros servicios de infraestructura, aumentando así sus niveles
+                                                    de rendimiento en red, actualización y mantenimiento. Creemos en
+                                                    encontrar maneras pequeñas pero significativas de mejorar el
+                                                    rendimiento de cada entidad de negocio, ahora y para cada paso que
+                                                    de dicha entidad hacia el crecimiento.</p>
                                                     <!-- <hr class="border-top border-5"> -->
                                                 </div>
                                             </div>
@@ -490,14 +539,29 @@
                                                 </div>
                                                 <div class="col-lg-6 p-3">
                                                     <h3 class="fw-bold">
-                                                        Lorem ipsum dolor sit.
+                                                        Centro comercial SENTURA Tlalnepantla
                                                     </h3>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-                                                    atque, exercitationem inventore sapiente quis sint sunt quae ullam
-                                                    placeat facilis unde. Nisi architecto similique libero, quo quaerat
-                                                    veritatis corporis aspernatur quam, tenetur, nobis hic obcaecati ea
-                                                    consequatur sapiente quae ducimus mollitia quis. Quis nostrum ipsa
-                                                    eum? Iure illum architecto minus?
+                                                    <p> Trabajamos de la mano de IURBANA para la creación de múltiples
+                                                        infraestructuras:</p>
+                                                    <ul>
+                                                        <li>Sistema centralizado de videovigilancia.</li>
+                                                        <li>Sistemas de control de acceso (puertas, lectoras,
+                                                            proximidad,
+                                                            sistemas de torniquetes, entre otros.)</li>
+                                                        <li>Sistemas de detección de incendios.</li>
+                                                        <li>Cableado estructurado.</li>
+                                                    </ul>
+                                                    <p> Todas ellas capaces de maximizar los niveles de servicio al
+                                                        usuario,
+                                                        buscando satisfacer las necesidades comerciales de los
+                                                        habitantes,
+                                                        además de vivir experiencias distintas y ofrecer gran variedad
+                                                        de
+                                                        servicios. El enfoque principal de esté proyecto es que nuestros
+                                                        clientes finales obtengan atractivos rendimientos disfrutando de
+                                                        un
+                                                        diseño funcional.</p>
+
                                                     <!-- <hr class="border-top border-5"> -->
                                                 </div>
                                             </div>
@@ -535,14 +599,22 @@
                                                 </div>
                                                 <div class="col-lg-6 p-3">
                                                     <h3 class="fw-bold">
-                                                        Lorem ipsum dolor sit.
+                                                        Instalaciones SmartFit México
                                                     </h3>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-                                                    atque, exercitationem inventore sapiente quis sint sunt quae ullam
-                                                    placeat facilis unde. Nisi architecto similique libero, quo quaerat
-                                                    veritatis corporis aspernatur quam, tenetur, nobis hic obcaecati ea
-                                                    consequatur sapiente quae ducimus mollitia quis. Quis nostrum ipsa
-                                                    eum? Iure illum architecto minus?
+                                                    <p> Grupo SmartFit desarrollo modelos de negocio donde la tecnología
+                                                        funge como principal asistencia al usuario, Century Tech
+                                                        participa
+                                                        de manera conjunta para desarrollar la infraestructura de cada
+                                                        sucursal que deseen implementar, abriendo las puertas cada vez a
+                                                        más
+                                                        personas a través de algunos servicios:</p>
+                                                    <ul>
+                                                        <li>Videovigilancia</li>
+                                                        <li>Control de acceso</li>
+                                                        <li>Audio</li>
+                                                        <li>Cableado estructurado
+
+                                                    </ul>
                                                     <!-- <hr class="border-top border-5"> -->
                                                 </div>
                                             </div>
@@ -575,19 +647,22 @@
                                                 <div class="col-lg-6">
                                                     <img src="img/galeria-img-4.jpg" alt="">
 
-
-
                                                 </div>
                                                 <div class="col-lg-6 p-3">
                                                     <h3 class="fw-bold">
-                                                        Lorem ipsum dolor sit.
+                                                        Corporativo AN Global
                                                     </h3>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-                                                    atque, exercitationem inventore sapiente quis sint sunt quae ullam
-                                                    placeat facilis unde. Nisi architecto similique libero, quo quaerat
-                                                    veritatis corporis aspernatur quam, tenetur, nobis hic obcaecati ea
-                                                    consequatur sapiente quae ducimus mollitia quis. Quis nostrum ipsa
-                                                    eum? Iure illum architecto minus?
+                                                    <p> Somos parte de una dependencia altamente calificada y de
+                                                        carácter
+                                                        internacional, donde desarrollamos infraestructuras capaces de
+                                                        brindar altos niveles de servicio al usuario y a la compañía,
+                                                        todo
+                                                        esto a través de los servicios digitales brindados con las
+                                                        instalaciones en infraestructura, cableado estructurado, y CCTV
+                                                        que
+                                                        Century Tech ofrece. Cuyo objetivo principal recae en la total
+                                                        satisfacción y pruebas de eficiencia en nuestras instalaciones
+                                                        certificadas.</p>
                                                     <!-- <hr class="border-top border-5"> -->
                                                 </div>
                                             </div>
