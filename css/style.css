@@ -41,6 +41,11 @@ h6 {
   -o-transition: all .3s ease-in !important;
 }
 
+.bg-contact {
+  background: #0095D9;
+  border-radius: 0 5px 5px 0;
+}
+
 p {
   font-family: rajdhani !important;
 }
@@ -304,6 +309,20 @@ main #portada-desarrollo {
   background-position: right;
 }
 
+main #banner-clientes {
+  background-image: url(../img/banner-tech.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 main #bg_skills {
   width: 100%;
   height: 100%;
@@ -490,5 +509,26 @@ footer .logo-footer {
 animate:hover {
   -webkit-transform: rotate(90deg) !important;
           transform: rotate(90deg) !important;
+}
+
+img.grayscale {
+  -webkit-filter: url(filters.svg#grayscale);
+          filter: url(filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome & Safari 6+ */
+  transition: .2s ease-in;
+  -webkit-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
+}
+
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: none;
+  transition: .2s ease-in;
+  -webkit-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@ $color-subtitle: #0095D9;
 $color-blanco: #efefef;
 $color-negro: #121212;
 $color-icon: #0095D9;
+$color-gris: #f5f6fa;
 
 @font-face {
     font-family: rajdhani;
@@ -45,6 +46,10 @@ h6 {
     transition: all .3s ease-in !important;
     -webkit-transition: all .3s ease-in !important;
     -o-transition: all .3s ease-in !important;
+}
+.bg-contact{
+    background: $color-secundario;
+    border-radius: 0 5px 5px 0;
 }
 
 p {
@@ -105,6 +110,7 @@ img {
 .border-top {
     border-color: $color-secundario !important;
 }
+
 .btn-info {
     background: $color-secundario !important;
     border: 2px solid $color-secundario;
@@ -130,9 +136,10 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        .logo-nav{
+        .logo-nav {
             width: 100px;
         }
+
         .menu-principal {
             list-style: none;
             display: flex;
@@ -289,7 +296,7 @@ header {
 
 main {
 
-    #banner-desarrollo{
+    #banner-desarrollo {
         width: 100%;
         height: 600px;
         background-image: url(../img/img-banner-desarrollo.png);
@@ -306,7 +313,7 @@ main {
         background-repeat: no-repeat;
         background-position: center;
     }
-    
+
     #portada-desarrollo {
         width: 100%;
         height: 600px;
@@ -315,6 +322,16 @@ main {
         background-repeat: no-repeat;
         background-position: right;
 
+    }
+
+    #banner-clientes {
+        background-image: url(../img/banner-tech.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 280px;
+        display: flex;
+        align-items: center;
     }
 
     #bg_skills {
@@ -400,8 +417,9 @@ main {
     }
 
 }
-footer{
-    .logo-footer{
+
+footer {
+    .logo-footer {
         width: 100px;
     }
 }
@@ -489,3 +507,22 @@ footer{
 animate:hover {
     transform: rotate(90deg) !important;
 }
+
+img.grayscale {
+    filter: url(filters.svg#grayscale);
+    /* Firefox 3.5+ */
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(1);
+    /* Google Chrome & Safari 6+ */
+    transition: .2s ease-in;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+  }
+  img.grayscale:hover {
+    filter: none;
+    -webkit-filter: none;
+    transition: .2s ease-in;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+  }
