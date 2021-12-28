@@ -249,7 +249,7 @@ header .burger-menu i {
 
 header .slideMenu {
   position: fixed;
-  top: 5.875rem;
+  top: 6.3rem;
   left: -80%;
   background: #efefef;
   text-align: center;
@@ -257,6 +257,7 @@ header .slideMenu {
   width: 80%;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  z-index: 99;
 }
 
 header .slideMenu.active {
@@ -1439,6 +1440,9 @@ footer .logo-footer {
     display: -ms-flexbox !important;
     display: flex !important;
   }
+  .carousel-h {
+    height: 100vh !important;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1607,7 +1611,7 @@ img.grayscale:hover {
 }
 
 .gradient-btn:hover {
-  background-position: right center;
+  background-position: right center !important;
 }
 
 .btnsecondary:hover,
@@ -1683,11 +1687,27 @@ img.grayscale:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-transition: margin-left 0.2s linear;
-  transition: margin-left 0.2s linear;
+  -webkit-transition: margin-left 0.2s linear !important;
+  transition: margin-left 0.2s linear !important;
 }
 
 .button-readmore:hover::after {
   margin-left: 0;
+}
+
+.carousel-h {
+  height: 500px !important;
+}
+
+.carousel-h:nth-child(1) {
+  background-image: url(../img/banner-century-vigilancia.jpg);
+}
+
+.carousel-h:nth-child(2) {
+  background-image: url(../img/banner-century-infra.jpg);
+}
+
+.carousel-h:nth-child(3) {
+  background-image: url(../img/banner-century.jpg);
 }
 /*# sourceMappingURL=style.css.map */

@@ -257,7 +257,7 @@ header {
 
     .slideMenu {
         position: fixed;
-        top: 5.875rem;
+        top: 6.3rem;
         left: -80%;
         background: $color-blanco;
         text-align: center;
@@ -266,6 +266,7 @@ header {
         -webkit-transition: all .3s ease;
         -o-transition: all .3s ease;
         transition: all .3s ease;
+        z-index: 99;
 
         &.active {
             left: 0;
@@ -1118,6 +1119,10 @@ footer {
             display: flex !important;
         }
     }
+    .carousel-h{
+        height: 100vh!important;
+
+    }
 }
 
 @media (max-width: 800px) {
@@ -1257,9 +1262,8 @@ img.grayscale:hover {
 	background-image: -o-linear-gradient(left, #5192e1 0%, #23ced5 51%, #5192e1 100%);
 	background-image: linear-gradient(to right, #5192e1 0%, #134e8c 51%, #126bd6 100%);
 }
-
 .gradient-btn:hover {
-	background-position: right center;
+	background-position: right center!important;
 }
 
 .btnsecondary:hover,
@@ -1271,11 +1275,6 @@ img.grayscale:hover {
 	color: #fff;
 }
 
-.btnsecondary:hover,
-.btnsecondary:focus {}
-
-.btnprimary:hover,
-.btnprimary:focus {}
 
 .button-readmore {
 	display: inline-block;
@@ -1345,12 +1344,28 @@ img.grayscale:hover {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	-webkit-transition: margin-left 0.2s linear;
-	-o-transition: margin-left 0.2s linear;
-	transition: margin-left 0.2s linear;
+	-webkit-transition: margin-left 0.2s linear!important;
+	-o-transition: margin-left 0.2s linear!important;
+	transition: margin-left 0.2s linear!important;
 }
 
 .button-readmore:hover::after {
 	margin-left: 0;
 }
 
+
+// baanner ANIMADO
+
+
+.carousel-h{
+    height: 500px!important;
+    &:nth-child(1){
+        background-image: url(../img/banner-century-vigilancia.jpg);    
+    }
+    &:nth-child(2){
+        background-image: url(../img/banner-century-infra.jpg);    
+    }
+    &:nth-child(3){
+        background-image: url(../img/banner-century.jpg);    
+    }
+}

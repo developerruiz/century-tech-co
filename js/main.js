@@ -1,5 +1,10 @@
 // objeto con propiedads
 
+let btnGradient = document.querySelectorAll('.gradient-btn');
+for (let i = 0; i < btnGradient.length; i++) {
+    btnGradient[i].style.transition =".2s ease-in"
+    
+}
 
 var propMenu ={
 
