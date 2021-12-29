@@ -1,4 +1,3 @@
-
 addEventListener('DOMContentLoaded', () => {
 
     const contadores = document.querySelectorAll('.contador_cantidad')
@@ -23,10 +22,6 @@ addEventListener('DOMContentLoaded', () => {
         }
 
     }
-    
- 
-//     //IntersectionObserver
-
     const mostrarContadores =  elementos => {
         elementos.forEach(elemento => {
             if(elemento.isIntersecting){
@@ -47,32 +42,4 @@ addEventListener('DOMContentLoaded', () => {
 
 
 })
-
-
-
-// addEventListener('DOMContentLoaded ', () => {
-//     const contadores =  document.querySelectorAll('.contador_cantidad')
-//     const velocidad = 1000
-
-//     const animarContadores = () =>{
-//         for (const contador of contadores ){
-//             const actualizar_contador = () =>{ 
-//                 let cantidad_maxima = +contador.dataset.catidadTotal,
-//                 valor_actual = +contador.innerText,
-//                 incremento = cantidad_maxima / velocidad
-    
-//                     if(valor_actual < cantidad_maxima){
-//                         contador.innerText = Math.ceil(valor_actual +  incremento)
-//                          setTimeout(actualizar_contador, 5)
-//                     }else{
-//                         contador.innerText = cantidad_maxima
-//                     }
-
-//             }
-//             actualizar_contador()
-//         }
-//     }
-   
-
-// })
 
