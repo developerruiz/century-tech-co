@@ -1229,12 +1229,15 @@ main .first-load .slide-wrapper.active .slide-content-text > p {
 }
 
 main #banner-desarrollo {
-  width: 100%;
-  height: 600px;
-  background-image: url(../img/img-banner-desarrollo.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -300px;
+  background-position: center;
+  height: 280px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 main #portada {
