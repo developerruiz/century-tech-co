@@ -1773,4 +1773,11 @@ img.grayscale:hover {
 .bg-gradient-info {
   background-image: linear-gradient(310deg, #2152ff, #21d4fd);
 }
+
+#canvas, #text {
+  position: absolute;
+  display: block;
+  width: 100%;
+  z-index: -1;
+}
 /*# sourceMappingURL=style.css.map */
