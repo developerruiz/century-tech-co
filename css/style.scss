@@ -948,15 +948,7 @@ main {
 
     }
 
-    #banner-clientes {
-        background-image: url(../img/banner-tech.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 280px;
-        display: flex;
-        align-items: center;
-    }
+  
 
     #bg_skills {
         width: 100%;
@@ -1423,9 +1415,24 @@ img.grayscale:hover {
 
 #canvas, #text {
 	position: absolute;
-	display: block;
+	display: flex;
+    align-items: center;
 	width: 100%;
-    // height: 400px;
+    background-image: url(../img/banner-tech.png);    
 	z-index: -1;
+
+    
+}
+
+#banner-clientes {
+        
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 280px;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    
     
 }
