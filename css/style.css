@@ -1701,13 +1701,76 @@ img.grayscale:hover {
 
 .carousel-h:nth-child(1) {
   background-image: url(../img/banner-century-vigilancia.jpg);
+  background-size: cover;
 }
 
 .carousel-h:nth-child(2) {
   background-image: url(../img/banner-century-infra.jpg);
+  background-size: cover;
 }
 
 .carousel-h:nth-child(3) {
   background-image: url(../img/banner-century.jpg);
+  background-size: cover;
+}
+
+.hover-up:hover {
+  margin-top: -5px !important;
+  -webkit-transition: 0.2s ease-in !important;
+  transition: 0.2s ease-in !important;
+}
+
+.hover-up {
+  -webkit-transition: 0.2s ease-in !important;
+  transition: 0.2s ease-in !important;
+}
+
+.img-animation {
+  -webkit-animation: animation 3s infinite;
+          animation: animation 3s infinite;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    margin-top: -15px;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+  }
+  50% {
+    margin-top: 15px;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+  }
+  100% {
+    margin-top: -15px;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+  }
+}
+
+@keyframes animation {
+  0% {
+    margin-top: -15px;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+  }
+  50% {
+    margin-top: 15px;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+  }
+  100% {
+    margin-top: -15px;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+  }
+}
+
+.bg-gradient-primary {
+  background-image: linear-gradient(310deg, #7928ca, #ff0080);
+}
+
+.bg-gradient-info {
+  background-image: linear-gradient(310deg, #2152ff, #21d4fd);
 }
 /*# sourceMappingURL=style.css.map */

@@ -1356,16 +1356,61 @@ img.grayscale:hover {
 
 // baanner ANIMADO
 
-
 .carousel-h{
     height: 500px!important;
+
     &:nth-child(1){
         background-image: url(../img/banner-century-vigilancia.jpg);    
+        background-size: cover;
     }
     &:nth-child(2){
         background-image: url(../img/banner-century-infra.jpg);    
+        background-size: cover;
+
     }
     &:nth-child(3){
         background-image: url(../img/banner-century.jpg);    
+        background-size: cover;
+
     }
+}
+
+// --------------------------PARTICLES 
+
+.hover-up:hover{
+    margin-top: -5px!important;
+    transition: .2s ease-in!important;
+}
+
+.hover-up{
+    transition: .2s ease-in!important;
+}
+
+.img-animation{
+    animation: animation 3s infinite;
+}
+
+@keyframes animation {
+
+    0%{
+        margin-top: -15px;
+        transition: .3s ease-in;
+    }
+    50%{
+        margin-top: 15px;
+        transition: .3s ease-in;
+    }
+    100%{
+        margin-top: -15px;
+        transition: .3s ease-in;
+    }
+}
+
+.bg-gradient-primary {
+    background-image: linear-gradient(
+310deg,#7928ca,#ff0080);
+}
+.bg-gradient-info {
+    background-image: linear-gradient(
+310deg,#2152ff,#21d4fd);
 }
